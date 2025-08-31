@@ -1,6 +1,9 @@
 import streamlit as st
 import pandas as pd
 import joblib
+import sklearn
+
+st.write("scikit-learn version:", sklearn.__version__)
 
 # Load trained model
 model = joblib.load("carbon_model.pkl")
